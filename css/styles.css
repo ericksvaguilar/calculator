@@ -26,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 100vh;
 
   font-family: 'Poiret One';
   background-color: #261712;
@@ -53,7 +54,7 @@ input {
   border-radius: 10px;
   border: none;
   background-color: #F2E3D5;
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px rgb(24, 24, 24);
   font-family: 'Bebas Neue', cursive;
   font-size: 1.5em;
   cursor: pointer;
@@ -75,13 +76,25 @@ input:hover {
 }
 
 .display {
-  display: block;
-  height: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+
+  height: 100px;
   background-color: white;
-  color: black;
-  margin-bottom: 2em;
+  color: rgb(29, 29, 29);
+  margin-bottom: 1em;
+  padding: 0 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px black;
+
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.3em;
+}
+
+.display>output:nth-child(1) {
+  font-size: .8em;
 }
 
 .buttons {
