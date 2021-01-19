@@ -1,0 +1,5 @@
+const operandsInput = document.querySelectorAll('[data-operands]')
+const operatorsInput = document.querySelectorAll('[data-operators]')
+const displayOutput = document.querySelector('[data-display]')
+const clearInput = document.querySelector('[data-clear]')
+const equalsInput = document.querySelector('[data-equals]')
