@@ -3,7 +3,7 @@
 This project is a simple calculator to test my know ledges HTML5, CSS3 and JavaScript ES6.
 
 ## Install
-`npm install`
+1. Download repository
 
 ## Usage
-`npm start`
+1. Open index.html
