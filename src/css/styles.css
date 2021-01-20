@@ -78,19 +78,25 @@ input:hover {
 .display {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
 
   height: 100px;
   background-color: white;
   color: rgb(29, 29, 29);
   margin-bottom: 1em;
-  padding: 0 10px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px black;
 
   font-family: 'Bebas Neue', cursive;
   font-size: 2.3em;
+}
+
+output {
+  height: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .display>output:nth-child(1) {

@@ -18,8 +18,10 @@ class Calculator {
   }
 
   updateDisplay() {
-    this._previousOperandOutputElement.innerText = this._currentOperandOutputElement.innerText
-    this._currentOperandOutputElement.innerText = ''
+    if (this._currentOperandOutputElement.innerText) {
+      this._previousOperandOutputElement.innerText = this._currentOperandOutputElement.innerText
+      this._currentOperandOutputElement.innerText = ''
+    }
   }
 
   clear() {
@@ -32,14 +34,29 @@ class Calculator {
   }
 
   compute() {
-    if (this._currentOperandOutputElement && this._previousOperandOutputElement) {
-      let currentOperandNumber = Number(this._currentOperandOutputElement.value)
-      let previousOperandNumber = Number(this._previousOperandOutputElement.value)
-      let result
+    let currentOperandNumber = Number(this._currentOperandOutputElement.value)
+    let previousOperandNumber = Number(this._previousOperandOutputElement.value)
+    let result
+
+    if (this._previousOperandOutputElement.innerText && this._currentOperandOutputElement.innerText) {
       switch (this._operator) {
         case '*':
           result = currentOperandNumber * previousOperandNumber
+          break
+        case '-':
+          result = previousOperandNumber - currentOperandNumber
+          break
+        case '/':
+          result = previousOperandNumber / currentOperandNumber
+          break
+        case '+':
+          result = currentOperandNumber + previousOperandNumber
+          break
+
       }
+
+      this._currentOperandOutputElement.innerText = result
+    } else {
 
     }
 
@@ -65,9 +82,14 @@ operandsInputElement.forEach(element => {
 operatorsInputElement.forEach(element => {
   element.addEventListener('click', element => {
     calculator.chooseOperator(element.target.value)
-    calculator.updateDisplay()
     calculator.compute()
+    calculator.updateDisplay()
   })
+})
+
+equalsInputElement.addEventListener('click', () => {
+  calculator.compute()
+  calculator.updateDisplay()
 })
 
 clearInputElement.addEventListener('click', () => {
