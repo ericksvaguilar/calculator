@@ -16,3 +16,7 @@ https://calculator.erickaguilar.com.br/
 
 ### Usage
 1. Open `index.html` with Liver Server in VSCode
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
