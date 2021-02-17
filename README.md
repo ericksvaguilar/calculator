@@ -5,8 +5,14 @@ This project is a simple calculator to test my know ledges about HTML5, CSS3 and
 ## Live Preview
 https://ericksvaguilar.github.io/calculator/
 
-## Install
-1. Download repository
+## Run the project
 
-## Usage
-1. Open index.html
+### Requirements
+* VSCode
+* Live Server (VSCode Extension)
+
+### Install
+1. Download or clone repository
+
+### Usage
+1. Open `index.html` with Liver Server in VSCode
