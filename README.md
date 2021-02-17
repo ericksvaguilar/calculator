@@ -3,7 +3,7 @@
 This project is a simple calculator to test my know ledges about HTML5, CSS3 and JavaScript ES6.
 
 ## Live Preview
-https://ericksvaguilar.github.io/calculator/
+https://calculator.erickaguilar.com.br/
 
 ## Run the project
 
