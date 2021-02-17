@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Erick Aguilar" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="src/css/normalize.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script type="module" defer src="src/js/main.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Erick Aguilar">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="src/css/normalize.css">
-  <link rel="stylesheet" href="src/css/styles.css">
-  <script type="module" defer src="src/js/main.js"></script>
-</head>
+  <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
 
-<body>
-  <header>
-    <h1>Calculator</h1>
-    <p>Simple calculator made with &#128153; and JavaScript</p>
-  </header>
+    <main class="calculator">
+      <div class="display">
+        <output data-previous-operand></output>
+        <output data-current-operand></output>
+      </div>
 
-  <main class="calculator">
-    <div class="display">
-      <output data-previous-operand></output>
-      <output data-current-operand></output>
-    </div>
-
-
-    <ul class="buttons">
-      <li><input type="button" value="7" data-operands></li>
-      <li><input type="button" value="8" data-operands></li>
-      <li><input type="button" value="9" data-operands></li>
-      <li><input class="operators" type="button" value="/" data-operators></li>
-      <li><input type="button" value="4" data-operands></li>
-      <li><input type="button" value="5" data-operands></li>
-      <li><input type="button" value="6" data-operands></li>
-      <li><input class="operators" type="button" value="*" data-operators></li>
-      <li><input type="button" value="1" data-operands></li>
-      <li><input type="button" value="2" data-operands></li>
-      <li><input type="button" value="3" data-operands></li>
-      <li><input class="operators" type="button" value="-" data-operators></li>
-      <li class="span-3"><input type="button" value="0" data-operands></li>
-      <li><input class="operators" type="button" value="+" data-operators></li>
-      <li><input type="button" value="C" data-clear></li>
-      <li class="span-3"><input class="equals" type="button" value="=" data-equals></li>
-    </ul>
-  </main>
-</body>
-
+      <ul class="buttons">
+        <li><input type="button" value="7" data-operands /></li>
+        <li><input type="button" value="8" data-operands /></li>
+        <li><input type="button" value="9" data-operands /></li>
+        <li>
+          <input class="operators" type="button" value="/" data-operators />
+        </li>
+        <li><input type="button" value="4" data-operands /></li>
+        <li><input type="button" value="5" data-operands /></li>
+        <li><input type="button" value="6" data-operands /></li>
+        <li>
+          <input class="operators" type="button" value="*" data-operators />
+        </li>
+        <li><input type="button" value="1" data-operands /></li>
+        <li><input type="button" value="2" data-operands /></li>
+        <li><input type="button" value="3" data-operands /></li>
+        <li>
+          <input class="operators" type="button" value="-" data-operators />
+        </li>
+        <li class="span-3"><input type="button" value="0" data-operands /></li>
+        <li>
+          <input class="operators" type="button" value="+" data-operators />
+        </li>
+        <li><input type="button" value="C" data-clear /></li>
+        <li class="span-3">
+          <input class="equals" type="button" value="=" data-equals />
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>
